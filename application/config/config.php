@@ -23,6 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
 $config['base_url'] = 'http://localhost/Praktikum3WebFramework/';
 
 /*
@@ -35,7 +36,9 @@ $config['base_url'] = 'http://localhost/Praktikum3WebFramework/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+
+// index page dibawah dihapus karena kita menggunakan .htaccess dan menghilangkan method index pada link
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

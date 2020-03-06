@@ -58,7 +58,9 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session', 'form_validation');
+
+// dibawah ini adalah tempat library/pustaka yang akan dimuat secara otomatis, saya menuliskan pustaka database agar dapat menggunakan query dan berbagai macam sintaks dari pustaka database, dan pustaka session agar dapat menggunakan sintaks session yang nantinya akan sangat berguna ketika menerapkan bab login
+$autoload['libraries'] = array('database', 'session');
 
 /*
 | -------------------------------------------------------------------
@@ -89,6 +91,8 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+
+// Di bawah ini adalah sebuah array helper, berbagai bantuan dapat dipanggil disini, misalkan dibawah ini terdapat url agar kita dapat menggunakan fungsi base_url() dan form agar kita dapat membuat form dsb.
 $autoload['helper'] = array('url', 'form');
 
 /*

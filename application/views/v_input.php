@@ -1,3 +1,4 @@
+<!-- Berikut adalah halaman yang berfungsi sebagai form penambahan user baru -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,7 @@
 		<h1>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</h1>
 		<h3>Tambah data baru</h3>
 	</center>
+	<!-- isi dari form dibawah akan dikirim menggunakan method post ke controller crud pada method tambah_aksi() -->
 	<form action="<?php echo base_url(). 'crud/tambah_aksi'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>

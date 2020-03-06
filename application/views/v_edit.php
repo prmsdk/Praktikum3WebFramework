@@ -1,3 +1,4 @@
+<!-- Halaman ini berguna untuk pengguna yang akan melakukan pembaruan (update) data milik salah satu user -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,7 @@
 		<h3>Edit Data</h3>
 	</center>
 	<?php foreach($user as $u){ ?>
+	<!-- dibawah ini adalah form edit yang jika ditekan submit akan mengarah ke method update() dan mengirim data melalui method post -->
 	<form action="<?php echo base_url(). 'crud/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>

@@ -1,3 +1,4 @@
+<!-- Halaman ini adalah tampilan tabel user yang ditangkap dari tabel user pada database -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,7 @@
 		</tr>
 		<?php 
 		$no = 1;
+		// Berikut adalah perulangan yang menampilkan tabel user sebanyak baris pada tabel
 		foreach($user as $u){ 
 		?>
 		<tr>
@@ -23,7 +25,9 @@
 			<td><?php echo $u->nama ?></td>
 			<td><?php echo $u->alamat ?></td>
 			<td><?php echo $u->pekerjaan ?></td>
+			<!-- Dibawah ini adalah isi tabel yang mengandung link aksi -->
 			<td>
+						<!-- link aksi yang ditulis dibawah berfungsi sebagai edit dan hapus, dibuat menggunakan helper acnhor -->
 			      <?php echo anchor('crud/edit/'.$u->id,'Edit'); ?>
             <?php echo anchor('crud/hapus/'.$u->id,'Hapus'); ?>
 			</td>

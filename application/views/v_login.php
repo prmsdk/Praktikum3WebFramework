@@ -1,3 +1,4 @@
+<!-- Halaman ini adalah halaman login -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +6,7 @@
 </head>
 <body>
 	<h1>Membuat Login Dengan CodeIgniter <br/> www.malasngoding.com</h1>
+	<!-- Username dan password yang dimasukkan akan diarahkan ke controller login, method aksi_login. Dikirim melalui method post -->
 	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		
 		<table>
 			<tr>
